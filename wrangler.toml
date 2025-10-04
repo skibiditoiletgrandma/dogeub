@@ -1,18 +1,5 @@
-name = "your-worker-name" # Replace with your desired project name
+name = "dogeub-deploystuffhjblhboljh" # Replace with your project name from the Cloudflare dashboard
 compatibility_date = "2025-10-04"
 
 [pages]
-main = { assets = "dist" } ```
-**Note:** The log also suggests a `wrangler.jsonc` file, which is an alternative format. The `.toml` format is more common.
-
-#### 2. Modify the Deploy Command
-
-If you prefer a quicker, one-time fix without a configuration file, you can modify your deploy command to point directly to the assets directory.
-
-Change your deploy command from:
-`npx wrangler deploy`
-
-to:
-`npx wrangler deploy --assets=./dist`
-
-This command explicitly tells Wrangler to deploy the contents of the `dist` directory. You will likely need to update this in your deployment platform's build settings or in your `package.json` script.
+main = { assets = "dist" }
